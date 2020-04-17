@@ -1,0 +1,234 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.peng.androidnewskill"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml
+10
+11    <!-- <application -->
+12    <!-- android:allowBackup="true" -->
+13    <!-- android:icon="@mipmap/ic_launcher" -->
+14    <!-- android:label="@string/app_name" -->
+15    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+16    <!-- android:supportsRtl="true" -->
+17    <!-- android:theme="@style/AppTheme"> -->
+18    <!-- <activity android:name=".FastBlurActivity"> -->
+19    <!-- <intent-filter> -->
+20    <!-- <action android:name="android.intent.action.MAIN" /> -->
+21    <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+22    <!-- </intent-filter> -->
+23    <!-- </activity> -->
+24    <!-- <activity android:name=".MainActivity"> -->
+25    <!-- </activity> -->
+26    <!-- </application> -->
+27    <application
+27-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:24:5-118:19
+28        android:name="com.peng.androidnewskill.page.application.BamApplication"
+28-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:25:9-80
+29        android:allowBackup="true"
+29-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:26:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.2.0] C:\Users\MLoong\.gradle\caches\transforms-2\files-2.1\4aafda5be1f4dfcf5232a4a3a673ee23\core-1.2.0\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@drawable/ic_bamboy"
+32-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:27:9-43
+33        android:label="@string/app_name"
+33-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:28:9-41
+34        android:supportsRtl="true"
+34-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:29:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:30:9-40
+37
+38        <!-- 关于Flyme的3D Press。(name值必须为"android.3dtouch.launcher_menu") -->
+39        <meta-data
+39-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:33:9-35:53
+40            android:name="android.3dtouch.launcher_menu"
+40-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:34:13-57
+41            android:resource="@xml/launcher_menu" />
+41-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:35:13-50
+42
+43        <!-- 主页 -->
+44        <activity
+44-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:38:9-70:20
+45            android:name="com.peng.androidnewskill.page.main.MainActivity"
+45-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:38:19-81
+46            android:screenOrientation="fullSensor" >
+46-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:39:13-51
+47            <intent-filter>
+47-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:41:13-45:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:42:17-69
+48-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:42:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:44:17-77
+50-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:44:27-74
+51            </intent-filter>
+52
+53            <!-- 用于接收压力触控的过滤器 -->
+54            <intent-filter>
+54-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:48:13-69:29
+55                <action android:name="android.intent.action.VIEW" />
+55-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:49:17-69
+55-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:49:25-66
+56
+57                <category android:name="android.intent.category.DEFAULT" />
+57-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:50:17-76
+57-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:50:27-73
+58                <category android:name="android.intent.category.BROWSABLE" />
+58-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:51:17-78
+58-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:51:27-75
+59
+60                <data
+60-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:53:17-56:54
+61                    android:host="com.bamboy.bamboycollected.page.main"
+61-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:54:21-72
+62                    android:path="/freemod"
+62-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:55:21-44
+63                    android:scheme="flyme_3dtouch" />
+63-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:56:21-51
+64                <data
+64-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:53:17-56:54
+65                    android:host="com.bamboy.bamboycollected.page.main"
+65-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:54:21-72
+66                    android:path="/blus"
+66-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:55:21-44
+67                    android:scheme="flyme_3dtouch" />
+67-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:56:21-51
+68                <data
+68-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:53:17-56:54
+69                    android:host="com.bamboy.bamboycollected.page.main"
+69-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:54:21-72
+70                    android:path="/toast"
+70-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:55:21-44
+71                    android:scheme="flyme_3dtouch" />
+71-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:56:21-51
+72                <data
+72-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:53:17-56:54
+73                    android:host="com.bamboy.bamboycollected.page.main"
+73-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:54:21-72
+74                    android:path="/click"
+74-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:55:21-44
+75                    android:scheme="flyme_3dtouch" />
+75-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:56:21-51
+76            </intent-filter>
+77        </activity>
+78
+79        <!-- Toast页 -->
+80        <activity
+80-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:73:9-74:54
+81            android:name="com.peng.androidnewskill.page.toast.ToastActivity"
+81-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:73:19-83
+82            android:screenOrientation="fullSensor" />
+82-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:74:13-51
+83
+84        <!-- 高斯模糊页 -->
+85        <activity
+85-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:77:9-78:54
+86            android:name="com.peng.androidnewskill.page.blur.BlurActivity"
+86-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:77:19-81
+87            android:screenOrientation="fullSensor" />
+87-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:78:13-51
+88
+89        <!-- 自动换行页 -->
+90        <activity
+90-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:81:9-82:54
+91            android:name="com.peng.androidnewskill.page.auto_line.AutoLineActivity"
+91-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:81:19-90
+92            android:screenOrientation="fullSensor" />
+92-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:82:13-51
+93
+94        <!-- 分批加载页 -->
+95        <activity
+95-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:85:9-86:54
+96            android:name="com.peng.androidnewskill.page.divide_load.DivideLoadActivity"
+96-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:85:19-94
+97            android:screenOrientation="fullSensor" />
+97-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:86:13-51
+98
+99        <!-- 点击动画页 -->
+100        <activity
+100-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:89:9-90:54
+101            android:name="com.peng.androidnewskill.page.anim_click.AnimClickActivity"
+101-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:89:19-92
+102            android:screenOrientation="fullSensor" />
+102-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:90:13-51
+103
+104        <!-- 非约束列表页 -->
+105        <activity
+105-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:93:9-94:54
+106            android:name="com.peng.androidnewskill.page.freedom.FreedomListActivity"
+106-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:93:19-91
+107            android:screenOrientation="fullSensor" />
+107-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:94:13-51
+108
+109        <!-- 节点进度条页 -->
+110        <activity
+110-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:97:9-131
+111            android:name="com.peng.androidnewskill.page.progress.ProgressActivity"
+111-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:97:19-89
+112            android:screenOrientation="fullSensor" />
+112-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:97:90-128
+113        <activity
+113-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:98:9-122
+114            android:name="com.peng.androidnewskill.page.progress.ActNoun"
+114-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:98:19-80
+115            android:screenOrientation="fullSensor" />
+115-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:98:81-119
+116        <activity
+116-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:99:9-123
+117            android:name="com.peng.androidnewskill.page.progress.ActSlope"
+117-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:99:19-81
+118            android:screenOrientation="fullSensor" />
+118-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:99:82-120
+119        <activity
+119-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:100:9-128
+120            android:name="com.peng.androidnewskill.page.progress.ActMoveNumber"
+120-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:100:19-86
+121            android:screenOrientation="fullSensor" />
+121-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:100:87-125
+122
+123        <!-- 右滑关闭 -->
+124        <activity android:name="com.peng.androidnewskill.page.slidingshut.SlidingShutActivity" />
+124-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:103:9-98
+124-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:103:19-95
+125        <activity android:name="com.peng.androidnewskill.page.slidingshut.AssignViewActivity" />
+125-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:104:9-97
+125-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:104:19-94
+126        <activity android:name="com.peng.androidnewskill.page.slidingshut.ColorBackdropActivity" />
+126-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:105:9-100
+126-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:105:19-97
+127        <activity android:name="com.peng.androidnewskill.page.slidingshut.InterceptFinishActivity" />
+127-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:106:9-102
+127-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:106:19-99
+128        <activity android:name="com.peng.androidnewskill.page.slidingshut.StartInstantlyActivity" />
+128-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:107:9-101
+128-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:107:19-98
+129        <activity android:name="com.peng.androidnewskill.page.slidingshut.UpFinishActivity" />
+129-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:108:9-95
+129-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:108:19-92
+130
+131        <!-- 物流卡片 -->
+132        <activity
+132-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:111:9-112:54
+133            android:name="com.peng.androidnewskill.page.expresscard.ExpressCardActivity"
+133-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:111:19-95
+134            android:screenOrientation="fullSensor" />
+134-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:112:13-51
+135
+136        <!-- 物流卡片 -->
+137        <activity
+137-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:115:9-116:54
+138            android:name="com.peng.androidnewskill.page.viewflipper.ViewFlipperActivity"
+138-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:115:19-95
+139            android:screenOrientation="fullSensor" />
+139-->D:\code\Android\GitSource\AndroidNewSkill\app\src\main\AndroidManifest.xml:116:13-51
+140    </application>
+141
+142</manifest>

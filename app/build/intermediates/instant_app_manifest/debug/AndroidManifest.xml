@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peng.androidnewskill"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <!-- <application -->
+    <!-- android:allowBackup="true" -->
+    <!-- android:icon="@mipmap/ic_launcher" -->
+    <!-- android:label="@string/app_name" -->
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+    <!-- android:supportsRtl="true" -->
+    <!-- android:theme="@style/AppTheme"> -->
+    <!-- <activity android:name=".FastBlurActivity"> -->
+    <!-- <intent-filter> -->
+    <!-- <action android:name="android.intent.action.MAIN" /> -->
+    <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+    <!-- </intent-filter> -->
+    <!-- </activity> -->
+    <!-- <activity android:name=".MainActivity"> -->
+    <!-- </activity> -->
+    <!-- </application> -->
+    <application
+        android:name="com.peng.androidnewskill.page.application.BamApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_bamboy"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- 关于Flyme的3D Press。(name值必须为"android.3dtouch.launcher_menu") -->
+        <meta-data
+            android:name="android.3dtouch.launcher_menu"
+            android:resource="@xml/launcher_menu" />
+
+        <!-- 主页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.main.MainActivity"
+            android:screenOrientation="fullSensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 用于接收压力触控的过滤器 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.bamboy.bamboycollected.page.main"
+                    android:path="/freemod"
+                    android:scheme="flyme_3dtouch" />
+                <data
+                    android:host="com.bamboy.bamboycollected.page.main"
+                    android:path="/blus"
+                    android:scheme="flyme_3dtouch" />
+                <data
+                    android:host="com.bamboy.bamboycollected.page.main"
+                    android:path="/toast"
+                    android:scheme="flyme_3dtouch" />
+                <data
+                    android:host="com.bamboy.bamboycollected.page.main"
+                    android:path="/click"
+                    android:scheme="flyme_3dtouch" />
+            </intent-filter>
+        </activity>
+
+        <!-- Toast页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.toast.ToastActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 高斯模糊页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.blur.BlurActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 自动换行页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.auto_line.AutoLineActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 分批加载页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.divide_load.DivideLoadActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 点击动画页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.anim_click.AnimClickActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 非约束列表页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.freedom.FreedomListActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 节点进度条页 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.progress.ProgressActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.peng.androidnewskill.page.progress.ActNoun"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.peng.androidnewskill.page.progress.ActSlope"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.peng.androidnewskill.page.progress.ActMoveNumber"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 右滑关闭 -->
+        <activity android:name="com.peng.androidnewskill.page.slidingshut.SlidingShutActivity" />
+        <activity android:name="com.peng.androidnewskill.page.slidingshut.AssignViewActivity" />
+        <activity android:name="com.peng.androidnewskill.page.slidingshut.ColorBackdropActivity" />
+        <activity android:name="com.peng.androidnewskill.page.slidingshut.InterceptFinishActivity" />
+        <activity android:name="com.peng.androidnewskill.page.slidingshut.StartInstantlyActivity" />
+        <activity android:name="com.peng.androidnewskill.page.slidingshut.UpFinishActivity" />
+
+        <!-- 物流卡片 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.expresscard.ExpressCardActivity"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 物流卡片 -->
+        <activity
+            android:name="com.peng.androidnewskill.page.viewflipper.ViewFlipperActivity"
+            android:screenOrientation="fullSensor" />
+    </application>
+
+</manifest>

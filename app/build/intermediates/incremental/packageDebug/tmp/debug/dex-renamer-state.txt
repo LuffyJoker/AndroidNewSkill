@@ -1,0 +1,4 @@
+#Fri Apr 17 22:37:59 CST 2020
+base.0=D\:\\code\\Android\\GitSource\\AndroidNewSkill\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
